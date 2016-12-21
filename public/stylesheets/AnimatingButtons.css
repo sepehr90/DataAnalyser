@@ -1,0 +1,12 @@
+.glyphicon-refresh-animate {
+ -webkit-animation: rotateThis 4s linear infinite;
+ animation: rotateThis 4s linear infinite;
+}
+@-webkit-keyframes rotateThis{
+ 	from {-webkit-transform: rotate(0deg);}
+ 	to{-webkit-transform: rotate(360deg);}
+}
+@keyframes rotateThis{
+ 	from {transform: rotate(0deg);}
+ 	to{transform: rotate(360deg);}
+}

@@ -1,7 +1,7 @@
-This is your new Play application
+This is A Data Analysing Play application
 =================================
 
-This file will be packaged with your application when using `activator dist`.
+This file will be packaged with the application when using `activator dist`.
 
 There are several demonstration files available in this template.
 

@@ -1,0 +1,159 @@
+@(title: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.css")">
+
+    <!-- Website CSS style -->
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/aboutme.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/footer.css")">
+
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home.html">Data Analysing Forum</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/main.scala.html">Home</a></li>
+                <li><a href="/frequencychart.html">About The Forum</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+
+</nav>
+<body>
+
+
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Who Am I?</h3>
+    <img class="img-responsive img-circle margin" style="display:inline" src="@routes.Assets.at("Me.png")" alt="Me" width="350" height="350">
+    <h3>I'm currently working as Software developer at CGI stockholm</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Background</h3>
+    <p>Sebastian is a skillful and dedicated software developer with more than 8 years of education and work in the Information Technology sector.
+        Sebastian has an extensive, strong and wide range of experience and knowledge in software development methodologies e.g. Scrum, analysing,
+        development using various technologies and frameworks such as .NET, Play and Spring, documenting, coding with numerous programming languages
+        such as C# and Java, modifying, testing and implementing software systems for different industry sectors such as finance and telecommunication
+        e.g. Ericsson.  Alongside Sebastian’s software development experiences, his scientific publications about Software requirements and quality in
+        international conferences stands for his expertise in the field of Information technology. Sebastian is a self-directed, goal oriented software
+        developer with remarkable sense of responsibility. Working and studying in different countries, with different cultures,
+        has made him an articulate and fluent communicator, flexible and responsive. </p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Where To Find Me?</h3><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Menu </h3>
+                    <ul>
+                        <li> <a href="/home.html"> Home </a> </li>
+                        <li> <a href="/aboutme.html"> About Me </a> </li>
+                        <li> <a href="/contact.html"> Contact Me </a> </li>
+                        <li> <a href="/login.html"> Login </a> </li>
+                        <li> <a href="/signup.html"> Sign Up </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Main Sponsors </h3>
+                    <ul>
+                        <div class="w3-col s4">
+                            <img class="demo w3-border w3-hover-shadow" src="@routes.Assets.at("foi-logo.png")" style="width:100%">
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Other Sponsors </h3>
+                    <ul>
+                        <div class="w3-col s4">
+                            <img class="demo w3-border w3-hover-shadow" src="@routes.Assets.at("uppsala-university-logo.jpg")" style="width:100%">
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 " style = "float:right;">
+                    <h3> Share </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn btn-primary mb1 bg-blue" type="button"> Send Recommendation <i class="fa fa-long-arrow-right"> </i> </button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.footer-->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © Sebastian Forouzani 2017 </p>
+
+        </div>
+    </div>
+    <!--/.footer-bottom-->
+</footer>
+
+</body>

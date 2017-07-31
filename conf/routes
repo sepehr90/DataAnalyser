@@ -3,11 +3,13 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET      /                            controllers.HomeController.index()
-#GET     /                            controllers.HomeController.ReturnUserInfo()
-GET      /login.html                  controllers.HomeController.login()
-GET      /frequencychart.html         controllers.HomeController.frequencychart()
-#GET     /frequencychart.html         controllers.HomeController.qcontents()
+GET      /home.html                    controllers.HomeController.index()
+GET      /signup.html                  controllers.HomeController.signup()
+GET      /login.html                   controllers.HomeController.login()
+GET      /contact.html                  controllers.HomeController.contact()
+GET      /aboutme.html                  controllers.HomeController.aboutme()
+GET      /frequencychart.html          controllers.HomeController.frequencychart()
+
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
@@ -16,5 +18,5 @@ GET     /message                    controllers.AsyncController.message
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 GET     /images/*file               controllers.Assets.at(path="/public/images", file)
-#GET     /javascripts/*file          controllers.Assets.at(path="/public/javascripts", file)
-#GET     /stylesheets/*file          controllers.Assets.at(path="/public/stylesheets", file)
+
+POST    /login.html                  controllers.HomeController.authenticate()

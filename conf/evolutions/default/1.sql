@@ -26,6 +26,13 @@ create table silkroad_data (
   language                  varchar(255))
 ;
 
+create table user (
+  email                     varchar(255) not null,
+  name                      varchar(255),
+  password                  varchar(255),
+  constraint pk_user primary key (email))
+;
+
 
 
 
@@ -38,6 +45,8 @@ drop table bar_chart_data;
 drop table date_of_posts;
 
 drop table silkroad_data;
+
+drop table user;
 
 SET FOREIGN_KEY_CHECKS=1;
 

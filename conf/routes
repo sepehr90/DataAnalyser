@@ -6,6 +6,7 @@
 GET      /home.html                    controllers.HomeController.index()
 GET      /signup.html                  controllers.HomeController.signup()
 GET      /login.html                   controllers.HomeController.login()
+POST    /login                         controllers.HomeController.authenticate()
 GET      /contact.html                  controllers.HomeController.contact()
 GET      /aboutme.html                  controllers.HomeController.aboutme()
 GET      /frequencychart.html          controllers.HomeController.frequencychart()
@@ -19,4 +20,4 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 GET     /images/*file               controllers.Assets.at(path="/public/images", file)
 
-POST    /login.html                  controllers.HomeController.authenticate()
+

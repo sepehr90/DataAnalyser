@@ -27,10 +27,21 @@ create table silkroad_data (
 ;
 
 create table user (
-  email                     varchar(255) not null,
-  name                      varchar(255),
+  id                        integer auto_increment not null,
+  firstname                 varchar(255),
+  lastname                  varchar(255),
+  adress                    TEXT,
+  city                      varchar(255),
+  state                     varchar(255),
+  zip                       varchar(255),
+  title                     varchar(255),
+  company                   varchar(255),
+  phonenumber               varchar(255),
+  email                     varchar(255),
+  website                   varchar(255),
   password                  varchar(255),
-  constraint pk_user primary key (email))
+  constraint uq_user_email unique (email),
+  constraint pk_user primary key (id))
 ;
 
 

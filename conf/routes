@@ -3,10 +3,11 @@
 # ~~~~
 
 # An example controller showing a sample home page
+GET      /                            controllers.HomeController.index()
 GET      /home.html                    controllers.HomeController.index()
 GET      /signup.html                  controllers.HomeController.signup()
 GET      /login.html                   controllers.HomeController.login()
-POST    /login                         controllers.HomeController.authenticate()
+POST     /login                         controllers.HomeController.authenticate()
 GET      /contact.html                  controllers.HomeController.contact()
 GET      /aboutme.html                  controllers.HomeController.aboutme()
 GET      /frequencychart.html          controllers.HomeController.frequencychart()

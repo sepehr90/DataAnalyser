@@ -10,7 +10,8 @@ libraryDependencies ++= Seq(
   javaJdbc,
   cache,
   javaWs,
-  "mysql" % "mysql-connector-java" % "5.1.42"
+  "mysql" % "mysql-connector-java" % "5.1.42",
+  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 )
 
 

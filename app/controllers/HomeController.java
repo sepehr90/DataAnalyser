@@ -2,14 +2,14 @@ package controllers;
 
 
 
+import com.avaje.ebean.Ebean;
 import models.BarChartData;
+import models.User;
 import play.mvc.*;
 import play.data.*;
 import play.twirl.api.Html;
 import views.html.*;
-
-import javax.swing.text.AbstractDocument;
-
+import javax.persistence.OptimisticLockException;
 import static play.data.Form.form;
 
 
@@ -35,7 +35,8 @@ public class HomeController extends Controller {
         public String email;
         public String password;
     }
-    //Retrieve data from database with edean
+
+    //Retrieve data from database with ebean
     public Result index() {
         //List<SilkroadData> posts = SilkroadData.getALLPosts();
         //List<BarChartData> counts = BarChartData.getBarChartData();
@@ -69,6 +70,26 @@ public class HomeController extends Controller {
             );
         }
     }
+
+    public static Result logout() {
+        session().clear();
+        flash("success", "You've been logged out");
+        return redirect(
+                routes.HomeController.login()
+        );
+    }
+
+    /*public Result adduser() {
+        Form <User> = Form.form(User.class).bindFromRequest().get();
+        try {
+            Ebean.save(newUser);
+            } catch (OptimisticLockException e) {
+            e.printStackTrace();
+            return internalServerError("Car registration failed");
+        }
+
+        return ok();
+    }*/
 
 
 

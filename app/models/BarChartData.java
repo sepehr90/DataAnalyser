@@ -22,15 +22,16 @@ public class BarChartData extends Model {
     @Column(columnDefinition = "TEXT")
     public String recentpost;
 
-    public static Model.Finder<String,BarChartData> find = new Model.Finder<String,BarChartData>(
+    public static Model.Finder<String,BarChartData> find = new Model.Finder<>(
             String.class, BarChartData.class
     );
 
     public static List<BarChartData> getBarChartData(){
-        List<BarChartData> Data = new ArrayList<BarChartData>();
+        List<BarChartData> Data;
         //posts = Ebean.find(SilkroadData.class).findList();
         //posts = Ebean.find(SilkroadData.class).where().eq("username", "TrashBox").findList();
-        Data = Ebean.find(BarChartData.class).findList();
+        //Data = Ebean.find(BarChartData.class).findList();
+        Data = Ebean.find(BarChartData.class).select("username,numberofposts,topfiveposts").findList();
         return Data;
     }
     //passing data from Sql in Json format
